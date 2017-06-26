@@ -1,0 +1,2 @@
+class MusleVideoController < ApplicationController
+end
