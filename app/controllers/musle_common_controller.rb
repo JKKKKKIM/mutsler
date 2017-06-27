@@ -1,0 +1,2 @@
+class MusleCommonController < ApplicationController
+end
