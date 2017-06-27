@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root 'musle_common#index'
   get '/main/home' => 'musle_common#index'
+  
+  get 'home' => 'musle_common#index'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
