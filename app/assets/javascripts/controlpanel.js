@@ -23,27 +23,8 @@ for(var i=0; i<$color.length; i++){
 $str = '<!-- **Style Picker Wrapper** -->';
 $str += '<div class="dt-style-picker-wrapper">';
 $str += '	<a href="" title="" class="style-picker-ico"> <i class="fa fa-gears"></i> </a>';
-$str += '	<div id="dt-style-picker">';
-$str += '   	<h2> Select Your Skin </h2>';
-$str += '       <h3> Choose your layout </h3>';
-$str += '		<ul class="layout-picker">';
-$str += '       	<li> <a id="fullwidth" href="" title="" class="selected"> <img src="images/style-picker/fullwidth.jpg" alt="" title="" /> </a> </li>';
-$str += '       	<li> <a id="boxed" href="" title=""> <img src="images/style-picker/boxed.jpg" alt="" title="" /> </a> </li>';
-$str += '		</ul>';
-$str += '		<div class="hr"> </div>';
-$str += '		<div id="pattern-holder" style="display:none;">';
-$str +='			<h3> Patterns for Boxed Layout </h3>';
-$str += '			<ul class="pattern-picker">';
-$str += 				$patterns;
-$str += '			</ul>';
-$str += '			<div class="hr"> </div>';
-$str += '		</div>';
-$str += '		<h3> Color scheme </h3>';
-$str += '		<ul class="color-picker">';
-$str += 		$colors;
-$str += '		</ul>';
-$str += '	</div>';
-$str += '</div><!-- **Ultimate Style Picker Wrapper - End** -->';
+$str += '	
+$str += '</div><!-- **Ultimate Style Picker Wrapper - End** -->'; 
 jQuery(document).ready(function($){
 	$("body > div.wrapper").before($str);
 	$picker_container = $("div.dt-style-picker-wrapper");
