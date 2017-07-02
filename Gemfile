@@ -6,6 +6,7 @@ gem 'rolify'
 gem 'rails_db'
 gem 'authority'
 
+gem 'rest-client'
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.
 gem 'bootstrap-sass'
 gem 'simple_form'
