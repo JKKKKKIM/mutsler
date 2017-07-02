@@ -1,7 +1,5 @@
 class MusleVideoController < ApplicationController
     def test 
-        
-        
     end
     def list
     end
