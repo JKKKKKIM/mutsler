@@ -1,6 +1,15 @@
+
 <div class="top-bar"><!-- Top Bar -->
     <div class="container">
-        <p>여기에다가 로그인 버튼</p>
+        <ul>
+        <% if user_signed_in? %>
+        <li><a href="#"><strong><%= current_user.nickname %></strong> 님 환영합니다.</a></li>
+        <li><a href="/users/sign_out" data-method="delete">로그아웃</a></li>
+        <% else %>
+        <li><a href="/users/sign_in">로그인</a></li>
+        <li><a href="/users/sign_up">회원가입</a></li>
+        </ul>
+        <% end %>
         <div class="top-right">
             <ul>
                 <li>
