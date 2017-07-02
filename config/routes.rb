@@ -1,18 +1,14 @@
 Rails.application.routes.draw do
   root 'musle_common#index'
   get '/main/home' => 'musle_common#index'
-
-  #지원--start--
+  
   get 'home' => 'musle_common#index'
-  get 'shop' => 'musle_common#shop'
-  get 'food_inf' => 'musle_common#food_inf'
-  get 'vegetable' => 'musle_common#vegetable'
-  get 'fruit' => 'musle_common#fruit'
-  get 'supplement' => 'musle_common#supplement'
-  get 'max' => 'musle_common#max'
-  get 'way' => 'musle_common#way'
-
-  # 지원--end--
+  
+  get '/list' => "home#list"
+  #종경 
+  get 'musle_daily/daily_write'
+  get 'musle_daily/daily_main'
+  #---
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

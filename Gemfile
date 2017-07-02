@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'
 gem 'rolify'
-
+gem 'rails_db'
 gem 'authority'
 
 # 페이지 뷰를 깔끔하게 보이도록 하기 위해서 아래의 두 젬을 추가로 설치한다.
