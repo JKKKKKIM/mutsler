@@ -692,7 +692,7 @@
 	ul.dt-sc-offer-date li span { width: 20px; font-size: 16px; }
 	
 	.dt-sc-offer .gallery-thumb img { border: 1px solid #000; }	
-	.dt-sc-offer .gallery-details h4, .product-border .product-details h4 { margin-bottom: 15px; font-weight: 100; }
+	.dt-sc-offer .gallery-details h4, .product-border .product-details h4 { margin-bottom: 15px; font-weight: 100;}
 	.dt-sc-offer .gallery-thumb, .blog-post.blog-single-entry .entry-thumb { line-height: 0; }
 	
 	.dt-sc-special-services-carousel .dt-sc-one-third, .dt-sc-offer-carousel .dt-sc-one-third, .dt-sc-client-wrapper .dt-sc-one-fourth { margin: 0 10px; }
@@ -930,9 +930,8 @@
 	.pagination ul li a, .pagination .next-post a, .pagination .prev-post a { border: 1px solid #cccccc; color: #000000; display: inline-block; float: left; font-size: 18px; font-weight: 100; line-height: 35px; margin: 0; padding: 0 13px; position: relative; z-index: 1; }
 	.pagination .next-post a, .pagination .prev-post a { padding: 0 9px; }
 
-	#primary.page-with-sidebar.with-right-sidebar { float: left; }
-	#primary.page-with-sidebar.with-left-sidebar { float: right; }
-	#primary { margin: 0; padding: 0; position: relative; width: 870px; }
+
+	#primary { padding :0; margin-left:150px; position: relative; width: 870px;  }
 	#primary.content-full-width { width: 100%; }	 
 	
 	#secondary.secondary-right-sidebar { float: right; margin-left: 25px; }
@@ -983,8 +982,8 @@
 	
 	h3.product-title a { font-weight: 100; }
 	.product-border { text-align:center; clear: both; } 
-	.product-border .product-details { padding: 30px; }
-	.product-border .product-thumb { border: 1px solid transparent; box-shadow: 1px 1px 1px transparent; padding: 15px 0 10px; position: relative; } 
+
+
 	.product-border:hover .product-thumb { border: 1px solid #cccccc; box-shadow: 1px 1px 1px #ccc; }
  	.page-with-sidebar.with-left-sidebar .pagination { text-align: right; }
 	
@@ -999,7 +998,7 @@
 	.star-rating span { float: left; left: 0; overflow: hidden; padding-top: 25px; position: absolute; top: 0; }
 	
 	.product-details h5 { font-style: italic; }	
-	.content .product-details .dt-sc-price { font-size: 25px; display: inline-block; }	
+	.content .product-details .dt-sc-price { font-size: 25px; display: inline-block;}	
 	span.product-info { font-size: 16px; font-style: italic; margin-left: 15px; } 	
 	span.product-info i.fa { font-size: 18px; color: #cccccc; padding-right: 5px }
 	
