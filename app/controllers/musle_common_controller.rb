@@ -5,4 +5,7 @@ class MusleCommonController < ApplicationController
     
     def login
     end
+    
+    def user_page
+    end
 end
