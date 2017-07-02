@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'musle_common#index'
   get '/main/home' => 'musle_common#index'
+
   #지원--start--
   get 'home' => 'musle_common#index'
   get 'shop' => 'musle_common#shop'
@@ -10,7 +11,8 @@ Rails.application.routes.draw do
   get 'supplement' => 'musle_common#supplement'
   get 'max' => 'musle_common#max'
   get 'way' => 'musle_common#way'
-  #지원--end--
+
+  # 지원--end--
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
