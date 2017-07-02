@@ -779,8 +779,8 @@
 	.dt-sc-testimonial-carousel-wrapper { position: relative; clear: both; } 
 	.dt-sc-testimonial-carousel-wrapper .carousel-arrows { display: inline-block; left: 0; margin: auto; right: 0; text-align: center; top: 23%; width: 30%; }
 	.dt-sc-testimonial-carousel-wrapper .carousel-arrows a { background-color: rgba(0, 0, 0, 0); position: absolute; width: 20px; } 
-	.dt-sc-testimonial-carousel-wrapper .carousel-arrows a.carousel-prev { background-image: url(images/prev-arrow.png); background-repeat: no-repeat; height: 32px; left: 0; }
-	.dt-sc-testimonial-carousel-wrapper .carousel-arrows a.carousel-next { right: 0; background-image: url(images/next-arrow.png); background-repeat: no-repeat; height: 32px; }
+	.dt-sc-testimonial-carousel-wrapper .carousel-arrows a.carousel-prev { background-image: url('assets/prev-arrow.png'); background-repeat: no-repeat; height: 32px; left: 0; }
+	.dt-sc-testimonial-carousel-wrapper .carousel-arrows a.carousel-next { right: 0; background-image: url('assets/next-arrow.png'); background-repeat: no-repeat; height: 32px; }
 	
 	.dt-sc-testimonial-carousel-wrapper.type2 .dt-sc-testimonial-carousel li blockquote { padding: 0 20px; }
 	.dt-sc-testimonial-carousel-wrapper.type2 .dt-sc-testimonial-carousel li blockquote:before { content: "\f10d"; font-family: fontawesome; font-size: 80px; left: 15px; position: absolute; top: 10px; z-index: -1; font-style: normal; }	
