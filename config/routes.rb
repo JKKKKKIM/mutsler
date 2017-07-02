@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   get 'home' => 'musle_common#index'
   
   get '/list' => "home#list"
-    
+  #종경 
   get 'musle_daily/daily_write'
   get 'musle_daily/daily_main'
+  #---
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
