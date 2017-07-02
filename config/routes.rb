@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+
   
-  devise_for :users
+  devise_for :user
   root 'muscle_common#index'
+  get '/main/home' => 'muscle_common#index'
   
-  
-  get '/home' => 'muscle_common#index'
+  get 'home' => 'muscle_common#index'
+
   get '/list' => "home#list"
   
   #수민 start
