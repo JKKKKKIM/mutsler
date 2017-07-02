@@ -5,5 +5,11 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_many :posts, dependent: :destroy
+  
+  has_many :dailies
+  has_many :videos
+  has_many :video_likes
+  
+    
+  #has_many :posts, dependent: :destroy
 end

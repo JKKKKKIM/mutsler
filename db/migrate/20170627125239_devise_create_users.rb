@@ -4,11 +4,10 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ##User _Custeom _  수민
       
       t.string  :nickname,         null:false, default: ""
-      t.string  :profile_image,
-      t.integer :role, default: "1"
-      t.integer :weight,
-      t.integer :height,
-      t.boolean :gender, #true:man false:women
+      t.string  :profile_image
+      t.integer :weight
+      t.integer :height
+      t.boolean :gender #true:man false:women
 
       
       ## Database authenticatable

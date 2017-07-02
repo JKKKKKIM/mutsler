@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20170702043535) do
     t.string   "title"
     t.string   "content"
     t.string   "image"
+    t.integer  "user_id"
+    t.integer  "health_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,6 +54,10 @@ ActiveRecord::Schema.define(version: 20170702043535) do
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname",               default: "", null: false
+    t.string   "profile_image"
+    t.integer  "weight"
+    t.integer  "height"
+    t.boolean  "gender"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -77,16 +83,26 @@ ActiveRecord::Schema.define(version: 20170702043535) do
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
   create_table "video_likes", force: :cascade do |t|
+    t.integer  "video_ids"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "video_replies", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.integer  "video_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "category1"
+    t.string   "category2"
+    t.string   "tag"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
