@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :user
+  
   root 'musle_common#index'
   get '/main/home' => 'musle_common#index'
   
