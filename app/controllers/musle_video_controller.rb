@@ -1,8 +1,6 @@
 class MusleVideoController < ApplicationController
     before_action :authenticate_user!
     def test 
-        
-        
     end
     def list
     end
