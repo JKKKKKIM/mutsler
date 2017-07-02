@@ -1,14 +1,21 @@
 Rails.application.routes.draw do
+  devise_for :user
   root 'musle_common#index'
   get '/main/home' => 'musle_common#index'
   
   get 'home' => 'musle_common#index'
   
   get '/list' => "home#list"
-  #종경 
+  
+  #수민 start
+  get 'musle_video/list'
+  #수민 end
+  
+  
+  #종경 start
   get 'musle_daily/daily_write'
   get 'musle_daily/daily_main'
-  #---
+  #종경 end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
