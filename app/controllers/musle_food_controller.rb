@@ -1,2 +1,3 @@
 class MusleFoodController < ApplicationController
+    
 end
