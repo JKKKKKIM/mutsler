@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170702023357) do
+ActiveRecord::Schema.define(version: 20170702061547) do
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"
@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20170702023357) do
   add_index "roles", ["name"], name: "index_roles_on_name"
 
   create_table "users", force: :cascade do |t|
-    t.string   "nickname",               default: "", null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
