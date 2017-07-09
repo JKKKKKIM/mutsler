@@ -1,6 +1,5 @@
 class MusleDailyController < ApplicationController
-    
-end
+    before_action :authenticate_user!
 
 
 def upload
@@ -10,4 +9,6 @@ def upload
         uploader.stroe!(pic)
         
         redirect_to '/musle_daily/daily_write'
+end
+
 end

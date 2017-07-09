@@ -3,7 +3,7 @@
 
 	/*----*****---- << Columns >> ----*****----*/
 	
-	.column { margin:0px 0px 0px 2.6%; float:left; min-height:1px; position:relative; }
+	.column { margin:0px 0px 0px 2.6%; float:left; min-height:1px; position:relative; margin-bottom: 20px }
 	.column.first { margin-left:0px; }	
 	
 	.dt-sc-full-width, .dt-sc-one-column { width:100%; }

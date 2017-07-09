@@ -1,26 +1,33 @@
 Rails.application.routes.draw do
-  devise_for :user
+
   
-  root 'musle_common#index'
-  get '/main/home' => 'musle_common#index'
+  devise_for :users 
   
-  get 'home' => 'musle_common#index'
-  get '/list' => "home#list"
+  root 'muscle_common#index'
+  
+  get "/" => 'muscle_common#index'
+  
+  get 'home' => 'muscle_common#index'
+
+  
   
   #수민 start
   get 'musle_video/list'
+  get 'musle_video/detail/:id' => 'musle_video#detail'
   #수민 end
   
   
   #종경 start
-  get 'musle_daily/daily_write'
-  get 'musle_daily/daily_main'
+  get 'musle_daily/daily_write' => "musle_daily#daily_write"
+  get 'musle_daily/daily_main' => "musle_daily#daily_main"
   #종경 end
   
   #태영 start
   
+
   get 'user_page' => 'musle_common#user_page'
   get '/list' => "home#list"
+  get 'user_page' => 'muscle_common#user_page'
 
   #태영 end
   #지원 

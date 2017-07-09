@@ -17,15 +17,13 @@ ActiveRecord::Schema.define(version: 20170706084612) do
     t.string   "title"
     t.string   "content"
     t.string   "image"
+    t.integer  "user_id"
+    t.integer  "health_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "food_meats", force: :cascade do |t|
-    t.string   "img_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+
 
   create_table "foods", force: :cascade do |t|
     t.string   "category1"
@@ -58,6 +56,10 @@ ActiveRecord::Schema.define(version: 20170706084612) do
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname",               default: "", null: false
+    t.string   "profile_image"
+    t.integer  "weight"
+    t.integer  "height"
+    t.boolean  "gender"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -70,6 +72,10 @@ ActiveRecord::Schema.define(version: 20170706084612) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "image"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
@@ -82,17 +88,21 @@ ActiveRecord::Schema.define(version: 20170706084612) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
-  create_table "video_likes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "video_replies", force: :cascade do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.integer  "video_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "category1"
+    t.string   "category2"
+    t.string   "url"
+    t.string   "image_url"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

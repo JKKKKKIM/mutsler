@@ -1,7 +1,21 @@
 source 'https://rubygems.org'
+gem 'jquery-turbolinks'
+gem 'omniauth'
+
+#이미지 업로드를 위한젬
+gem 'carrierwave', '~> 1.0'
+
+#github: 'carrierwaveuploader/carrierwave'
+
+
+# css 깨지는거 방지하는 gem
+gem "font-awesome-rails"
 
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'
+gem 'paperclip',"~> 5.0.0"
+# gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+# gem "paperclip", github: "thoughtbot/paperclip"
 gem 'rolify'
 gem 'rails_db'
 gem 'authority'
