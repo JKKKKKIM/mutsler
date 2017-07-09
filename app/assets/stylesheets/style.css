@@ -262,7 +262,7 @@
 	/*----*****---- << 02. Header >> ----*****----*/
 	
 	#header { backface-visibility: hidden; display: block; margin: 0; position: relative; width: 100%; z-index: 99999; }
-	#logo {  margin: 0; padding: 15px 0 10px; text-align: center; width: 100%; z-index: 9; clear: both; display: inline-block; }
+	#logo { background: #000000; margin: 0; padding: 15px 0 10px; text-align: center; width: 100%; z-index: 9; clear: both; display: inline-block; }
 	
 	.boxed #header, .boxed .is-sticky #header { width: 1260px; margin: 0 auto; }
 	.boxed #header.type5 { width: 1260px; }
