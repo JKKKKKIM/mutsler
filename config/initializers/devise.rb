@@ -1,3 +1,6 @@
+
+#facebook 로그인을 위함
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -6,7 +9,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'aeedaca486497bc68e5aa52a72a2801a55a3a96c9f4de2aa653abd2658b93ce5ff571544e9972e5473abaf24c9f539f6dced2610e1422341f13a35fb303f6153'
+  # config.secret_key = 'ca3d61bc85b53616b396fe2c387e9c9d8d3ff0358f52c04fcaa8cc64733e3c0d6a20e9854be07eb717bb0fdb5a8b7229521ce29b74c56a23e1e7de56f8a14f75'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -108,7 +111,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '50d9aca849ce6b0dbe08cb78909291e3e385d23d40340f3193d5aaad5c8f33975c12fbf341f87f6a301cc58baae76b7579173e2118a2eb5470cd6acaf36af7fa'
+  # config.pepper = '1b9331f762248ba0074e21dd70c1e9011a145595ff4a76e2e5d0ca7f6d7279bae875e553f3bf9ff57cc542c6060bd84e3c48379db9c442c8476ff2b500f1132b'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -245,7 +248,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
@@ -274,4 +277,6 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+  
+
 end

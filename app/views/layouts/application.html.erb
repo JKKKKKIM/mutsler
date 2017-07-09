@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- favicons -->
+ 
+ <!--bootstrap cdn -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ <!-- favicons -->
   <%= favicon_link_tag 'favicon.ico' %>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
   <title>Muscler</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>	
 	<meta name="description" content="">
 	<meta name="author" content="">
-	
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
-<%= render "musle_common/top_bar" %>
 
-<%= render "musle_common/header" %>
+
+
+<%= render "muscle_common/header" %>
 
 <%= yield %>
 
-<%= render "musle_common/footer" %>
+<%= render "muscle_common/footer" %>
 
 </body>
 
