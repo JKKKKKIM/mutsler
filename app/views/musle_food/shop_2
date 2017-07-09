@@ -69,30 +69,43 @@
         	<section class="fullwidth-background">
         		<div class="breadcrumb-wrapper">
                     <div class="container">
-                        <h4> supplement information </h4>
-                        <h6><a href="supplement.html"> 게이너</a> / 매스 / <a href="way.html">웨이</a></h6>
+                                               <h4> health </h4>
+                        <h6><a href="food_inf.html">음식</a> /<a href="supplement.html">보충제</a></h6>
                     </div>
                 </div>                
             </section>
             <div class="hr-invisible-very-small"></div>
             <div class="clear"></div>
-            <h2 class="border-title aligncenter"> Mass Information </h2>
+            <h2 class="border-title aligncenter"> Dietary information </h2>
             <div class="hr-invisible-small"></div>
-            <h1>매스란?</h1><br>
-            <h3>보통 극적으로 마른 사람들 즉, 외배협 체형이 많이먹는 제품입니다. 탄수화물의 비율이 단백질 비율보다 더욱더 높아서 에너지 증가와 웨이트 중량을 늘리기 위해서 먹는 제품</h3>
             <div class="container">
-                    <div class="column dt-sc-one-third first">
+                   <div class="column dt-sc-one-third first">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	
-                                	<img class="jiwon" src="<%=@result%>">
+                                	<%= image_tag(@result_3) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> true mass </a>
+                                	<a href="#"> 삼겹살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> 1회제공량 710kcal </div>
+                                <div class="dt-sc-price"> 100g = 331kcal </div>
+                                <div class="hr-invisible-very-very-small"></div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hr-invisible-medium"></div>
+                        <div class="product-border">
+                        	<div class="product-thumb">
+                                	<%= image_tag(@result) %><br>
+                                
+                            </div>
+                            <div class="product-details">
+                            	<h4>
+                                	<a href="#"> 후라이드 치킨 </a>
+                                </h4>
+                                <div class="dt-sc-price"> 1마리 = 1700kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -102,31 +115,14 @@
                         <div class="product-border">
                         	<div class="product-thumb">
                             	
-                                
-                                
-                            </div>
-                            <div class="product-details">
-                            	<h4>
-                                	<a href="#">  </a>
-                                </h4>
-                                <div class="dt-sc-price"> </div>
-                                <div class="hr-invisible-very-very-small"></div>
-
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="hr-invisible-medium"></div>
-                        <div class="product-border">
-                        	<div class="product-thumb">
-                            	
-                                
+                                	<%= image_tag(@result_2) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#">  </a>
+                                	<a href="#"> 연어 </a>
                                 </h4>
-                                <div class="dt-sc-price">  </div>
+                                <div class="dt-sc-price"> 100g = 161kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -136,14 +132,30 @@
                     	<div class="product-border">
                         	<div class="product-thumb">
                             	
-                                	<img class="jiwon" src="<%=@result_2%>">
+                                	<%= image_tag(@result_4) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> up your mass </a>
+                                	<a href="#"> 양고기 </a>
                                 </h4>
-                                <div class="dt-sc-price"> 1회제공량 = 510kcal </div>
+                                <div class="dt-sc-price"> 100g = 144kcal </div>
+                                <div class="hr-invisible-very-very-small"></div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hr-invisible-medium"></div>
+                        <div class="product-border">
+                        	<div class="product-thumb">
+                                	<%= image_tag(@result_5) %><br>
+                                
+                            </div>
+                            <div class="product-details">
+                            	<h4>
+                                	<a href="#"> 소고기(안심) </a>
+                                </h4>
+                                <div class="dt-sc-price"> 100g = 154kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -153,31 +165,14 @@
                         <div class="product-border">
                         	<div class="product-thumb">
                             	
-                                
-                                
-                            </div>
-                            <div class="product-details">
-                            	<h4>
-                                	<a href="#">  </a>
-                                </h4>
-                                <div class="dt-sc-price">  </div>
-                                <div class="hr-invisible-very-very-small"></div>
-
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="hr-invisible-medium"></div>
-                        <div class="product-border">
-                        	<div class="product-thumb">
-                            	
-                                	
+                                	<%= image_tag(@result_6) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> </a>
+                                	<a href="#"> 소고기(로스) </a>
                                 </h4>
-                                <div class="dt-sc-price">  </div>
+                                <div class="dt-sc-price"> 100g = 318kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -186,14 +181,14 @@
                     	<div class="product-border">
                         	<div class="product-thumb">
                             	
-                                	<img class="jiwon" src="<%=@result_3%>">
+                                	<%= image_tag(@result_7) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> 킹 메스 </a>
+                                	<a href="#"> 곱창 </a>
                                 </h4>
-                                <div class="dt-sc-price"> 1스푼당 130kcal </div>
+                                <div class="dt-sc-price"> 100g = 141kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -202,14 +197,14 @@
                         <div class="product-border">
                         	<div class="product-thumb">
                             	
-                                	
+                                	<%= image_tag(@result_8) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#">  </a>
+                                	<a href="#"> 목살 </a>
                                 </h4>
-                                <div class="dt-sc-price">  </div>
+                                <div class="dt-sc-price"> 100g = 265kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                                 
                             </div>
@@ -218,15 +213,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	
-                                	
+                                	<%= image_tag(@result_9) %><br>
                                 
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#">  </a>
+                                	<a href="#"> 돼지 갈비 </a>
                                 </h4>
-                                <div class="dt-sc-price">  </div>
+                                <div class="dt-sc-price"> 100g = 208kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                     
                             </div>
@@ -235,6 +229,15 @@
                     <div class="clear"></div>
                     <div class="hr-invisible-small"></div>
                     <div class="pagination">
+                        <ul>
+                            <li> <a href="/musle_food/shop.html">1</a></li>
+                            <li class="current_now"> <a href="#">2</a></li>
+                            <li><a href="/musle_food/shop_3.html">3</a></li>
+                            <li><a href="/musle_food/shop_4.html">4</a></li>
+                            <li><a href="/musle_food/shop_5.html">5</a></li>
+                            <li><a href="/musle_food/shop_6.html">6</a></li>
+                            <li><a href="/musle_food/shop_7.html">7</a></li>
+                        </ul>
                         <div class="next-post"> <a href="#"><span class="fa fa-long-arrow-right"></span> </a> </div>
                     </div>
                     <div class="hr-invisible-medium"></div>

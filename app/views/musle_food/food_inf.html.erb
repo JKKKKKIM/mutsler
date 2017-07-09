@@ -82,15 +82,14 @@
                     <div class="column dt-sc-one-third first">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img1.png" alt="" title="" style="margin-left: 50;">
+                            	<%= image_tag(@result_3) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 삼겹살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 331kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -99,15 +98,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img4.png" alt="" title="">
+                                	<%= image_tag(@result) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 프라이드 치킨 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 1마리 = 1700kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -116,15 +114,16 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img4.png" alt="" title="">
+                                	     <%@result_2.each do |p|%>
+                                          <%= image_tag(p['src']) %><br>
+                                    <%end%>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 닭가슴살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 109kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -133,15 +132,14 @@
                     <div class="column dt-sc-one-third">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
+                                	<%= image_tag(@result_4) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 양고기 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 292kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -150,15 +148,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
+                                	<%= image_tag(@result_5) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 소고기(안심) </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 154kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
 
                             </div>
@@ -167,15 +164,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
+                                	<%= image_tag(@result_6) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 소고기(로스) </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 318kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -183,15 +179,14 @@
                     <div class="column dt-sc-one-third">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
+                                	<%= image_tag(@result_7) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 곱창 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 140kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -199,15 +194,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
+                                	<%= image_tag(@result_8) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 목살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g 264kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                                 
                             </div>
@@ -216,15 +210,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
+                                	<%= image_tag(@result_9) %><br>
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 돼지갈비 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 337kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                     
                             </div>
@@ -235,9 +228,7 @@
                     <div class="pagination">
                         <ul>
                             <li class="current_now"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
+                            <li><a href="/musle_food/food_inf_2">2</a></li>
                         </ul>
                         <div class="next-post"> <a href="#"><span class="fa fa-long-arrow-right"></span> </a> </div>
                     </div>

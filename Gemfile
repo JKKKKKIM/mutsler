@@ -14,6 +14,8 @@ gem 'simple_form'
 # 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
 gem 'letter_opener', group: :development
 
+# 크롤링
+gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
