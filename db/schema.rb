@@ -82,13 +82,6 @@ ActiveRecord::Schema.define(version: 20170702043535) do
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id"
 
-  create_table "video_likes", force: :cascade do |t|
-    t.integer  "video_ids"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "video_replies", force: :cascade do |t|
     t.string   "content"
     t.integer  "user_id"
@@ -101,7 +94,8 @@ ActiveRecord::Schema.define(version: 20170702043535) do
     t.string   "title"
     t.string   "category1"
     t.string   "category2"
-    t.string   "tag"
+    t.string   "url"
+    t.string   "image_url"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# css 깨지는거 방지하는 gem
+gem "font-awesome-rails"
+
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'
 gem 'rolify'

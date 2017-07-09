@@ -1,0 +1,142 @@
+         <div id="main"><!-- Main -->
+        	<div class="hr-invisible-small"></div>
+        	<section class="fullwidth-background">
+        		<div class="breadcrumb-wrapper">
+                    <div class="container">
+                    </div>
+                </div>                
+            </section>
+            <div class="hr-invisible-very-small"></div>
+            <div class="clear"></div>
+            <div class="container">
+           	  <section id="secondary" class="secondary-left-sidebar">
+                	<aside class="widget searchwidget">
+                    <h3 class="border-title"> Blog <span>Search</span></h3>
+                    	<form method="post" action="#" name="searchform" class="subscribe-frm">
+                            <p>
+                            	<input type="text" name="username" placeholder="Enter Keyword" required>                              
+                                <i class="fa fa-search icon"></i>
+                            </p>
+                        </form>
+                    </aside>
+                    <div class="clear"></div>
+                    <div class="hr-invisible-small"></div>
+                    <aside class="widget widget_categories">
+                    	<h3 class="border-title"> Blog <span>Category</span></h3>
+                        <ul>
+                        	<li>
+                            	<a title="" href="#"> VEDIO </a>
+                            </li>
+                            <li>
+                            	<a title="" href="#"> DAILY </a>
+                            </li>
+                            <li>
+                            	<a title="" href="#"> FOOD </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="clear"></div>
+                    <div class="hr-invisible-small"></div>
+                   
+                    <div class="clear"></div>
+                    <div class="hr-invisible-small"></div>
+                    <aside class="widget widget_tag_cloud">
+                    	<h3 class="border-title"> Tags <span>Cloud</span></h3>
+                        <div class="tagcloud">
+                        	<a href="#" title="1 topic"> vedio </a>
+                            <a href="#" title="1 topic"> daily </a>
+                            <a href="#" title="1 topic"> food </a>
+                        </div>
+                    </aside>
+                </section>
+            	<section id="primary" class="page-with-sidebar with-left-sidebar transparent-bg">
+                	<article class="blog-post blog-single-entry ">	
+                        <div class="entry-thumb">
+                            <a href="#">
+                     
+                            </a>
+                        </div>
+                        <div class="entry-details">
+                        	
+                        	<iframe width="560" height="315" src="https://www.youtube.com/embed/kfEC3oB91KQ" frameborder="0" allowfullscreen></iframe>
+                            <div class="entry-title">
+                                <h3>POST TITLE</h3>
+                            </div>
+                            <div class="section-text mb-30">
+                                
+                                <i class="--" value="-->"></i>
+                                <p id="like_p"class="like_p" value="--"</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="hr-invisible-small"></div>
+                            <div class="hr-separator type2"></div> 
+                            <div class="dt-sc-post-pagination">
+                                <a href="#" class="dt-sc-button small type1 with-icon prev-post">
+                                    <span> Previous Post </span>
+                                </a>
+                                <a href="#" class="dt-sc-button small type1 with-icon next-post">
+                                    <span> Next Post </span>
+                                </a>
+                            </div>
+                            
+                            <div class="hr-separator type2"></div> 
+                            <div class="clear"></div>
+                            <div class="hr-invisible-medium"></div>
+                            <div class="commententries">
+                            	<h3 class="border-title"> 3 <span>Comments</span></h3>
+                                <ul class="commentlist">
+                                	<li>
+                                        <div class="comment">
+                                            <header class="comment-author">
+                                                <%= image_tag("cmt-img1.jpg") %>
+                                            </header>
+                                            <div class="comment-details">
+                                                <div class="author-name">
+                                                    <a href="" title=""> nickname</a>
+                                                </div>
+                                                <div class="commentmetadata">  June 25th, 2015, at 12:30 pm </div>
+                                                <div class="reply">
+                                                </div>
+                                                <div class="comment-body">
+                                                    <div class="comment-content">
+                                                    <p> comment</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  	</li>
+                                </ul>
+                            </div>
+                            <div id="respond">
+                            	<h3 class="border-title"> Post A <span>Comments</span></h3>
+                                <form method="post" action="php/send.php" name="enqform" id="comment-form" novalidate>
+                                	<div class="animate" data-delay="100" data-animation="fadeIn">
+                                        <div class="column dt-sc-one-third first">
+                                            <p>
+                                                <%=current_user.email%>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="animate" data-delay="700" data-animation="fadeIn">
+                                    	<div class="column dt-sc-one-column">
+                                            <p>
+                                                <textarea cols="5" rows="10" required name="txtmessage" class="message" placeholder="Your Message"></textarea>
+                                            </p>
+                                            <input type="submit" name="submit" value="Add Comments">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="hr-invisible-medium"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </article>
+                </section>
+                <div class="clear"></div>
+                <div class="hr-invisible"></div>
+          	</div>      
+        </div><!-- End of Main --> 
+	</div><!-- End of Inner-Wrapper -->
+</div><!-- End of Wrapper -->

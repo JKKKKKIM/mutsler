@@ -9,6 +9,7 @@ class MusleVideoController < ApplicationController
 
     end
     def detail
+        
     end
     def update
     end
