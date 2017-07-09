@@ -20,7 +20,12 @@
                             </div>
                             <div class="hr-invisible-medium"></div>
                             <div class="dt-sc-view-btn aligncenter">
-                                <a href="/user/sign_up" class="btn-eff2"> DO IT NOW </a>
+                                <% if user_signed_in? %>
+                                <a href="/user_page" class="btn-eff2"> <%= current_user.nickname %> 님 환영합니다. </a>
+                                <% else %>
+                                <a href="/users/sign_up" class="btn-eff2"> Muscler와 함께하기 </a>
+                                <% end %>
+                                
                             </div>   
                             
                             <div class="hr-invisible"></div>
@@ -33,256 +38,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container"><!-- Container -->
-            	<h2 class="border-title aligncenter">
-                    Welcome to Trend Salon
-                </h2>
-                <p class="aligncenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate id est laborum.</p>
-				<div class="clear"></div>
-                <div class="hr-invisible-medium"></div>
-                <div class="hr-invisible-very-very-small"></div>
-                <div class="column dt-sc-one-fourth first">
-                	<div class="dt-sc-service type1 animate" data-delay="100" data-animation="fadeIn animated">
-                    	<figure class="gallery-thumb">
-                        	<a href="#">
-                        	<%=image_tag("service-img1.jpg",class:"dt-sc-filter") %></a>
-                        </figure>
-                        <div class="icon">
-                            <a href="#">
-                            <%=image_tag("service-icon1.png",class:"first-img") %></a>
-                            <a href="#">
-                            <%=image_tag("service-icon5.png",class:"second-img") %></a>
-                        </div>
-                        <h3><a href="#"> Cutting & Styling </a></h3>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                	<div class="dt-sc-service type1 animate" data-delay="200" data-animation="fadeIn animated">
-                    	<figure class="gallery-thumb">
-                        	<a href="#">
-                        	    <%=image_tag("service-img2.jpg", class:"dt-sc-filter") %>
-                        	</a>
-                        </figure>
-                        <div class="icon">
-                            <a href="#">
-                                <%=image_tag("service-icon2.png", class:"first-img") %>
-                            </a>
-                            <a href="#">
-                                <%=image_tag("service-icon6.png", class:"second-img") %>
-                            </a>
-                        </div>
-                        <h3><a href="#"> Beard Cutting </a></h3>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                	<div class="dt-sc-service type1 animate" data-delay="300" data-animation="fadeIn animated">
-                    	<figure class="gallery-thumb">
-                        	<a href="#">
-                        	<%=image_tag("service-img3.jpg", class:"dt-sc-filter") %>
-                        	</a>
-                        </figure>
-                        <div class="icon">
-                            <a href="#">
-                                <%=image_tag("service-icon3.png", class:"first-img") %>
-                            </a>
-                            <a href="#">
-                                <%=image_tag("service-icon7.png", class:"second-img") %>
-                            </a>
-                        </div>
-                        <h3><a href="#">Coloring & Styling </a></h3>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                	<div class="dt-sc-service type1 animate" data-delay="400" data-animation="fadeIn animated">
-                    	<figure class="gallery-thumb">
-                        	<a href="#">
-                        	    <%=image_tag("service-img4.jpg", class:"dt-sc-filter") %>
-                        	</a>
-                        </figure>
-                        <div class="icon">
-                            <a href="#">
-                            <%=image_tag("service-icon4.png", class:"first-img")%>
-                            </a>
-                            <a href="#"><%=image_tag("service-icon8.png", class:"second-img") %>
-                            </a>
-                        </div>
-                        <h3><a href="#"> Facial & Skin Therapy </a></h3>
-                    </div>
-                </div>
-            </div><!-- End of Container -->
-            <div class="clear"></div>
-            <div class="hr-invisible"></div>
-            <div class="fullwidth-section dt-sc-parallax-section pricing-parallax dark-bg">
-                <div class="fullwidth-bg">
-                    <div class="parallax-spacing">
-                        <div class="container"><!-- Container -->
-                        	<h2 class="border-title aligncenter"> Our Latest Offers </h2>
-                            <div class="hr-invisible-small"></div>
-                            <div class="column dt-sc-one-fourth first">
-                            	<div class="animate" data-delay="200" data-animation="fadeIn animated">
-                                    <h3 class="border-title">Our Salon <span>Offers</span></h3>
-                                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="dt-sc-offer-text">
-                                        <h2>50</h2>
-                                        <span>%<span>off</span></span>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <ul class="dt-sc-offer-date">
-                                        <li>
-                                            <span class="fa fa-calendar"></span>
-                                            June 5th to August 5th
-                                        </li>
-                                        <li>
-                                            <span class="fa fa-map-marker"></span>
-                                            All over London
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="column dt-sc-three-fourth">
-                            	<div class="dt-sc-offer-carousel-wrapper animate" data-delay="400" data-animation="fadeIn animated">
-                                	<div class="dt-sc-offer-carousel">
-                                    	<div class="column dt-sc-one-third">
-                                        	<div class="dt-sc-offer">
-                                                <figure class="gallery-thumb">
-                                                    <a href="#">
-                                                    <%=image_tag("offer-img1.jpg") %>
-                                        
-                                                </figure>
-                                                <div class="gallery-details">
-                                                	<h4><a href="#">Hair Coloring</a></h4>
-                                                    <div class="dt-sc-price">
-                                                    	£ 200
-                                                    </div>
-                                                    <div class="hr-invisible-very-very-small"></div>
-                                                    <a class="dt-sc-button btn-eff3" href="#" data-text="View Details"><span>View Details</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column dt-sc-one-third">
-                                        	<div class="dt-sc-offer">
-                                                <figure class="gallery-thumb">
-                                                    <a href="#">
-                                                    <%=image_tag("offer-img2.jpg") %>
-                                                </figure>
-                                                <div class="gallery-details">
-                                                	<h4><a href="#">Hair Coloring</a></h4>
-                                                    <div class="dt-sc-price">
-                                                    	£ 200
-                                                    </div>
-                                                    <div class="hr-invisible-very-very-small"></div>
-                                                    <a class="dt-sc-button btn-eff3" href="#" data-text="View Details"><span>View Details</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column dt-sc-one-third">
-                                        	<div class="dt-sc-offer">
-                                                <figure class="gallery-thumb">
-                                                    <a href="#">
-                                                    <%=image_tag("blog-img2.jpg") %>
-                                                </figure>
-                                                <div class="gallery-details">
-                                                	<h4><a href="#">Hair Coloring</a></h4>
-                                                    <div class="dt-sc-price">
-                                                    	£ 200
-                                                    </div>
-                                                    <div class="hr-invisible-very-very-small"></div>
-                                                    <a class="dt-sc-button btn-eff3" href="#" data-text="View Details"><span>View Details</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column dt-sc-one-third">
-                                        	<div class="dt-sc-offer">
-                                                <figure class="gallery-thumb">
-                                                    <a href="#">
-                                                    <%=image_tag("offer-img1.jpg") %>
-                                                    </a>
-                                                </figure>
-                                                <div class="gallery-details">
-                                                	<h4><a href="#">Hair Coloring</a></h4>
-                                                    <div class="dt-sc-price">
-                                                    	£ 200
-                                                    </div>
-                                                    <div class="hr-invisible-very-very-small"></div>
-                                                    <a class="dt-sc-button btn-eff3" href="#" data-text="View Details"><span>View Details</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column dt-sc-one-third">
-                                        	<div class="dt-sc-offer">
-                                                <figure class="gallery-thumb">
-                                                    <a href="#">
-                                                    <%=image_tag("offer-img2.jpg") %>
-                                                    </a>
-                                                </figure>
-                                                <div class="gallery-details">
-                                                	<h4><a href="#">Hair Coloring</a></h4>
-                                                    <div class="dt-sc-price">
-                                                    	£ 200
-                                                    </div>
-                                                    <div class="hr-invisible-very-very-small"></div>
-                                                    <a class="dt-sc-button btn-eff3" href="#" data-text="View Details"><span>View Details</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-	                                </div>
-                                	<div class="carousel-arrows">
-                                        <a href="#" class="prev-arrow"><i class="fa fa-angle-left"></i></a>
-                                        <a href="#" class="next-arrow"><i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hr-invisible-small"></div>
-                            <div class="hr-invisible-very-small"></div>
-                        </div><!-- End of Container -->
-                    </div>
-                </div>
-        	</div>            
-            <div class="clear"></div>
-            <div class="fullwidth-section promo-parallax" style="background-position: 35% 0%;">
-            	<div class="parallax-spacing">
-                	<div class="container">
-                        <h2 class="border-title aligncenter"> Our Beauty Product </h2>
-                        <div class="hr-invisible"></div>
-                        <div class="column dt-sc-one-third first">
-                        </div>
-                        <div class="column dt-sc-one-third">
-                        	<div class="animate" data-delay="200" data-animation="fadeIn animated">
-                        	     <%=image_tag("container-box.png") %>
-                            </div>
-                        </div>
-                        <div class="column dt-sc-one-third">
-                        	<div class="animate" data-delay="400" data-animation="fadeIn animated">
-                                <h3 class="border-title">Duis aute irure dolor <span>pariatur</span></h3>
-                                <ul class="dt-sc-fancy-list check italic">
-                                    <li> Sed do eiusmod tempor incididunt ut </li>
-                                    <li> Labore et dolore magna aliqua </li>
-                                    <li> Ut enim ad minim veniam quis </li>
-                                    <li> Nostrud exercitation ullamco laboris </li>
-                                    <li> Cupidatat non proident, sunt in </li>
-                                    <li> Culpa qui officia deserunt mollit anim</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        <div class="hr-invisible-medium"></div>
-                        <div class="column dt-sc-one-third first">
-                        </div>
-                        <div class="column dt-sc-two-third">
-                            <div class="dt-sc-notification">
-                                <div class="alignleft">
-                                    <h4>Lorem ipsum dolor sit amet, consectetur <span>Adipiscing elit</span></h4>
-                                </div>
-                                <div class="alignright">
-                                    <a class="dt-sc-button" href="#">£150</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hr-invisible-very-very-small"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
+            
+            
+        
+            <div class="clear"></div> 
             <div class="fullwidth-section dt-sc-parallax-section counter-parallax dark-bg">
                 <div class="fullwidth-bg">
                 	<div class="container">
@@ -342,80 +101,15 @@
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
-            <div class="hr-invisible"></div>
-            <div class="container">
-            	<h2 class="border-title aligncenter"> Meet our Expert Stylists </h2>
-                <p class="aligncenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="hr-invisible"></div>
-                <div class="column dt-sc-one-fourth first">
-                    <div class="dt-sc-team type1 animate" data-delay="100" data-animation="fadeIn animated">
-                        <div class="image">
-                            <%=image_tag("team-img4.jpg") %>
-                            <div class="image-overlay">
-                                <div class="team-details-social-icons">
-                                    <a class="fa fa-facebook" href="#"> </a>
-                                    <a class="fa fa-twitter" href="#"> </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4><a href="#"> Angel Sienna </a></h4>
-                        <h5>Professional Hairstylist</h5>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                    <div class="dt-sc-team type1 animate" data-delay="200" data-animation="fadeIn animated">
-                        <div class="image">
-                            <%=image_tag("team-img1.jpg") %>
-                            <div class="image-overlay">
-                                <div class="team-details-social-icons">
-                                    <a class="fa fa-facebook" href="#"> </a>
-                                    <a class="fa fa-twitter" href="#"> </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4><a href="#"> John Doe </a></h4>
-                        <h5>Professional Hairstylist</h5>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                    <div class="dt-sc-team type1 animate" data-delay="300" data-animation="fadeIn animated">
-                        <div class="image">
-                            <%=image_tag("team-img2.jpg") %>
-                            <div class="image-overlay">
-                                <div class="team-details-social-icons">
-                                    <a class="fa fa-facebook" href="#"> </a>
-                                    <a class="fa fa-twitter" href="#"> </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4><a href="#"> Scorlett Johanson </a></h4>
-                        <h5>Professional Hairstylist</h5>
-                    </div>
-                </div>
-                <div class="column dt-sc-one-fourth">
-                    <div class="dt-sc-team type1 animate" data-delay="400" data-animation="fadeIn animated">
-                        <div class="image">
-                            <%=image_tag("team-img3.jpg") %>
-                            <div class="image-overlay">
-                                <div class="team-details-social-icons">
-                                    <a class="fa fa-facebook" href="#"> </a>
-                                    <a class="fa fa-twitter" href="#"> </a>
-                                </div>
-                            </div>
-                        </div>
-                        <h4><a href="#"> Mark Vick</a></h4>
-                        <h5>Professional Hairstylist</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <div class="hr-invisible-medium"></div>
+            
+            
+            
+            
           	<div class="fullwidth-section dt-sc-parallax-section blog-parallax dark-bg">
                 <div class="fullwidth-bg">
                 	<div class="parallax-spacing">
                     	<div class="container">
-                        	<h2 class="border-title aligncenter"> From the Blog </h2>
+                        	<h2 class="border-title aligncenter"> Your Wannabe </h2>
                             <div class="hr-invisible"></div>
                             <div class="column dt-sc-one-third first">
                             	<article class="blog-entry">
@@ -427,21 +121,14 @@
                                     <div class="entry-details">
                                         <div class="hr-invisible-very-small"></div>
                                         <div class="entry-title">
-	                                        <h3>Lorem ipsum dolor sit amet consectetur adipiscing</h3>
+	                                        <h3>김우빈</h3>
                                         </div>
                                         <div class="entry-meta">
                                         	<h6>May 21<br>2014</h6>
                                         </div>
                                         <div class="entry-metadata">
-                                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e</p>
-                                            <div class="author">
-                                                <i class="fa fa-user"></i>
-                                                <a href="#">admin</a>
-                                            </div>
-                                            <div class="tags">
-                                                <i class="fa fa-tag"></i>
-                                                <a href="#">relax</a>
-                                            </div>
+                                            <p>건강한 몸</p>
+                                            
                                         </div>
                                     </div>
                                 </article>
@@ -456,21 +143,14 @@
                                     <div class="entry-details">
                                         <div class="hr-invisible-very-small"></div>
                                         <div class="entry-title">
-	                                        <h3>Lorem ipsum dolor sit amet consectetur adipiscing</h3>
+	                                        <h3>김종국</h3>
                                         </div>
                                         <div class="entry-meta">
                                         	<h6>May 21<br>2014</h6>
                                         </div>
                                         <div class="entry-metadata">
-                                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e</p>
-                                            <div class="author">
-                                                <i class="fa fa-user"></i>
-                                                <a href="#">admin</a>
-                                            </div>
-                                            <div class="tags">
-                                                <i class="fa fa-tag"></i>
-                                                <a href="#">relax</a>
-                                            </div>
+                                            <p>근육질 몸</p>
+                                            
                                         </div>
                                     </div>
                                 </article>
@@ -485,21 +165,14 @@
                                     <div class="entry-details">
                                         <div class="hr-invisible-very-small"></div>
                                         <div class="entry-title">
-	                                        <h3>Lorem ipsum dolor sit amet consectetur adipiscing</h3>
+	                                        <h3>마동석</h3>
                                         </div>
                                         <div class="entry-meta">
                                         	<h6>May 21<br>2014</h6>
                                         </div>
                                         <div class="entry-metadata">
-                                            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e</p>
-                                            <div class="author">
-                                                <i class="fa fa-user"></i>
-                                                <a href="#">admin</a>
-                                            </div>
-                                            <div class="tags">
-                                                <i class="fa fa-tag"></i>
-                                                <a href="#">relax</a>
-                                            </div>
+                                            <p>근육 깡패</p>
+                                            
                                         </div>
                                     </div>
                                 </article>
@@ -507,7 +180,7 @@
                         </div>
                     </div>
                	</div>
-          	</div>
+          	</div> <!-- 김우빈 김종국 마동석 끝-->
             
             <div class="clear"></div>
             <div class="hr-invisible"></div>

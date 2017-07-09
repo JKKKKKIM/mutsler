@@ -16,62 +16,103 @@
                         
                         <ul class="menu">
                             <li class="current_page_item menu-item-simple-parent"><a href="/">Home</a>
+                            	
+                                <a class="dt-menu-expand">+</a>
+                            </li>
+                             <li class="menu-item-simple-parent"><a href="musle_daily/daily_main"> Daily </a>
                             	<ul class="sub-menu">
-                                    <li><a href="index-v2.html">Home 2</a></li>
-                                    <li><a href="index-v3.html">Home 3</a></li>
-                                    <li><a href="index-v4.html">Home 4</a></li>
-                                    <li><a href="index-v5.html">Home 5</a></li>
+                                    <li><a href="header2.html">Daily Main</a></li>
+                                    <li><a href="header2.html">Daily Write</a></li>
                                 </ul>
                                 <a class="dt-menu-expand">+</a>
                             </li>
-                             <li class="menu-item-simple-parent"><a href="musle_daily/daily_main">종경이형 부분</a>
-                            	<ul class="sub-menu">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                   <li><a href="shortcodes.html">Shortcodes</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="header2.html">Header Types</a>
-                                    	<ul class="sub-menu">
-                                            <li><a href="header2.html">Header2</a></li>
-                                            <li><a href="header3.html">Header3</a></li>
-                                            <li><a href="header4.html">Header4</a></li>
-                                            <li><a href="header5.html">Header5</a></li>
+                            <li class="menu-item-simple-parent"><a href="services.html">Video</a>
+                                <ul class="sub-menu">
+                                    <li><a href="shortcodes.html">체형별</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="header2.html">외배엽</a></li>
+                                            <li><a href="header3.html">내배엽</a></li>
+                                            <li><a href="header4.html">중배엽</a></li>
+                                            
+                                            
                                         </ul>
-                                		<a class="dt-menu-expand">+</a>
                                     </li>
-                                </ul>
-                                <a class="dt-menu-expand">+</a>
+                                    
+                                    
+                                    <li><a href="shortcodes.html">근육별</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="header2.html">가슴</a></li>
+                                            <li><a href="header3.html">어깨</a></li>
+                                            <li><a href="header4.html">위팔 앞</a></li>
+                                            <li><a href="header4.html">위팔 뒤</a></li>
+                                            <li><a href="header4.html">아래팔</a></li>
+                                            <li><a href="header4.html">등</a></li>
+                                            <li><a href="header4.html">허리</a></li>
+                                            <li><a href="header4.html">복부</a></li>
+                                            <li><a href="header4.html">허벅지 앞</a></li>
+                                            <li><a href="header4.html">허벅지 뒤</a></li>
+                                            <a class="dt-menu-expand">+</a>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="shortcodes.html">Wannbe</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="header2.html">김우빈st</a></li>
+                                            <li><a href="header3.html">김종국st</a></li>
+                                            <li><a href="header4.html">마동석st</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    </ul>
+                            
                             </li>
-                            <li class=""><a href="services.html">Service</a></li>
-                            <li class="menu-item-simple-parent"><a href="shop.html">Shop</a>
+                            <li class="menu-item-simple-parent"><a href="blog.html">Food</a>
                                 <ul class="sub-menu">
-                                    <li><a href="shop-cart.html">Cart</a></li>
-                                    <li><a href="shop-checkout.html">CheckOut</a></li>
+                                    <li><a href="blog-details.html">음식</a>
+                                    
+                                        <ul class="sub-menu">
+                                            <li><a href="header2.html">육류</a></li>
+                                            <li><a href="header3.html">채소류</a></li>
+                                            <li><a href="header4.html">과일류</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li><a href="blog-details-rhs.html">보충제</a>
+                                    
+                                        <ul class="sub-menu">
+                                            <li><a href="header2.html">웨이</a></li>
+                                            <li><a href="header3.html">게이너</a></li>
+                                            <li><a href="header4.html">매스</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    
                                 </ul>
                                 <a class="dt-menu-expand">+</a>
                             </li>
-                            <li class="menu-item-simple-parent"><a href="blog.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-details-rhs.html">Blog Details With RHS</a></li>
-                                    <li><a href="blog-details-lhs.html">Blog Details With LHS</a></li>
-                                </ul>
-                                <a class="dt-menu-expand">+</a>
-                            </li>
-                            <li class="menu-item-simple-parent"><a href="portfolio.html">Gallery</a>
+                            
+                            <% if user_signed_in? %>
+                            <li class="menu-item-simple-parent"><a href="#"><%= current_user.nickname %></a>
                             	<ul class="sub-menu">
-                                    <li><a href="portfolio-details.html">Gallery Details</a></li>
-                                    <li><a href="portfolio-details-rhs.html">Gallery Details With RHS</a></li>
-                                    <li><a href="portfolio-details-lhs.html">Gallery Details With LHS</a></li>
+                                    <li><a href="/user_page">프로필</a></li>
+                                    <li><%= link_to "등급 : " + user_roles(current_user), '#' %></li>
+                                    <li><a href="/users/sign_out">로그아웃</a></li>
                                 </ul>
                                 <a class="dt-menu-expand">+</a>
                             </li>
-                            <li class="menu-item-simple-parent"><a href="contact.html">Contacts</a>
+                            <% else %>
+                            <li class="menu-item-simple-parent"><a href="/users/sign_in">로그인</a>
                             	<ul class="sub-menu">
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="contact2.html">Contact 2</a></li>
+                                    <li><a href="/users/sign_up">회원가입</a></li>
                                 </ul>
                                 <a class="dt-menu-expand">+</a>
                             </li>
+                            <% end %>
                         </ul>
                     </nav><!-- End of Nav -->
                 </div>

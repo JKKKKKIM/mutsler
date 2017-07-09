@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
   
-  devise_for :user
+  devise_for :users 
   
   root 'muscle_common#index'
   
-  
+  get "/" => 'muscle_common#index'
   
   get 'home' => 'muscle_common#index'
 

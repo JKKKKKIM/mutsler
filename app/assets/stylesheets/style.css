@@ -262,7 +262,7 @@
 	/*----*****---- << 02. Header >> ----*****----*/
 	
 	#header { backface-visibility: hidden; display: block; margin: 0; position: relative; width: 100%; z-index: 99999; }
-	#logo { background: #000000; margin: 0; padding: 15px 0 10px; text-align: center; width: 100%; z-index: 9; clear: both; display: inline-block; }
+	#logo {  margin: 0; padding: 15px 0 10px; text-align: center; width: 100%; z-index: 9; clear: both; display: inline-block; }
 	
 	.boxed #header, .boxed .is-sticky #header { width: 1260px; margin: 0 auto; }
 	.boxed #header.type5 { width: 1260px; }
@@ -739,7 +739,7 @@
 
 	.blog-entry .entry-thumb { border: 1px solid #000; display: block; left: 0; line-height: 0; margin: 0 auto; overflow: hidden; position: relative; right: 0; }
 
-	.blog-entry .entry-thumb img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1.2) rotate(5deg); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
+	.blog-entry .entry-thumb img { height: 400px; filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); transform: scale(1.2) rotate(5deg); -moz-transform: scale(1.2) rotate(5deg); -ms-transform: scale(1.2) rotate(5deg); -o-transform: scale(1.2) rotate(5deg); -webkit-transform: scale(1.2) rotate(5deg); }
 	.blog-entry .entry-meta { top: -25px; left: 0; margin: 0 auto; position: absolute; right: 0; text-align: center; }
 	.blog-entry:hover .entry-details .entry-meta h6 { animation: 800ms linear pulse; -moz-animation: 800ms linear pulse; -ms-animation: 800ms linear pulse; -o-animation: 800ms linear pulse; -webkit-animation: 800ms linear pulse; }
 	
