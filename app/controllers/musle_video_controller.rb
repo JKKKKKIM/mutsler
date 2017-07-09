@@ -14,6 +14,8 @@ class MusleVideoController < ApplicationController
     
         @post = Video.find(params[:id])
         
+        @p = "test"
+        
     end
     def update
     end
