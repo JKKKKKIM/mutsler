@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   
   #수민 start
   get 'musle_video/list'
-  get 'musle_video/detail'
+  get 'musle_video/detail/:id' => 'musle_video#detail'
   #수민 end
   
   

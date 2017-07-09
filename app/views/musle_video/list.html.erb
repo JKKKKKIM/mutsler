@@ -1,28 +1,28 @@
 <section class="fullwidth-background">
     <div class="breadcrumb-wrapper">
         <div class="container">
-          <% 3.times{ %>
-            <div class="column dt-sc-one-third">
-                <div class="row">
-                  <div class="col-md-4 col-lg-4 col-sm-4">
-                      <div class="entry-thumb">
-                        <a href="#">
-                            <%= image_tag("blog-img1.jpg") %>
-                        </a>
-                    </div>
-                    <div class="entry-details">
-                        <div class="hr-invisible-very-small"></div>
-                        <div class="entry-title">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipiscing</h3>
+            <article class="blog-entry col-offset-md-1">          
+                <% @post.each do |p| %>
+                <a href="/musle_video/detail/<%=p.id%>">
+                    <div class="vd_margin column col-md-3 ">
+                        <div class="entry-thumb">
+                            <%= image_tag("#{p.image_url}") %>
+                        </div>
+                        <div class="entry-details">
+                            <div class="hr-invisible-very-small"></div>
+                              <div class="entry-title">
+                                <h3><%=p.title.to_s[0,10]%></h3>
+                            </div>
+                            <div class="entry-meta">
+                                <h6><%=p.created_at.to_s[0,11]%></h6>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
-            </div>
-            <% } %>
-        
+                </a>
+                <% end %>
+            </article>
         </div>
-    </div>                
+    </div><!--wrapper div -->                
 </section>
   
         

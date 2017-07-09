@@ -13,10 +13,11 @@ require 'csv'
 #admin_user.add_role :admin
 #after_create :set_default_role, if: Proc.new { User.count > 1 }
 
-csv_text = File.read('vedios.csv')
-csv = CSV.parse(csv_text, :headers => true)
-csv.each do |row|
-  Video.create!(row.to_hash)
-end
+#vedio seed
+#csv_text = File.read('vedios.csv')
+#csv = CSV.parse(csv_text, :headers => true)
+#csv.each do |row|
+#  Video.create!(row.to_hash)
+#end
 admin_user = User.create( nickname: "관리자", email: 'admin@email.com', password: '12345678' )
 admin_user.add_role :admin
