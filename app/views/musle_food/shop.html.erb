@@ -143,15 +143,18 @@
                     <div class="column dt-sc-one-third first">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img1.png" alt="" title="">
+                                	<%@result.each do |p|%>
+                                          <%= image_tag(p['src']) %><br>
+                                    <%end%>
+
+
                                 </a>
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 닭가슴살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g=109kcal </div>
                                 
                             </div>
                         </div>
@@ -159,30 +162,31 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img4.png" alt="" title="">
-                                </a>
+                                                                	<%@result_2.each do |p|%>
+                                          <%= image_tag(p['src']) %><br>
+                                    <%end%>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 바나나 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g=92kcal </div>
                             </div>
                         </div>
                         <div class="clear"></div>
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img4.png" alt="" title="">
-                                </a>
+                            	
+                                	<%= image_tag(@result_3) %><br>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 삼겹살 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 331kcal </div>
 
                             </div>
                         </div>
@@ -190,30 +194,29 @@
                     <div class="column dt-sc-one-third">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
-                                </a>
+                            	
+                                	<%= image_tag(@result_4) %><br>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 사과 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 57kcal </div>
                             </div>
                         </div>
                         <div class="clear"></div>
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
-                                </a>
+                                	<%= image_tag(@result_5) %><br>
+                               
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 감자 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 55kcal </div>
     
                             </div>
                         </div>
@@ -221,15 +224,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img2.png" alt="" title="">
-                                </a>
+                                	<%= image_tag(@result_6) %><br>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 고구마 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 128kcal </div>
 
                             </div>
                         </div>
@@ -237,15 +239,14 @@
                     <div class="column dt-sc-one-third">
                     	<div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
-                                </a>
+                                	<%= image_tag(@result_7) %><br>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 딸기 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 27kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -253,15 +254,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
-                                </a>
+                     	            <%= image_tag(@result_8)%><br>
+                                
                             </div>
                             <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 파인애플 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 23kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -269,15 +269,14 @@
                         <div class="hr-invisible-medium"></div>
                         <div class="product-border">
                         	<div class="product-thumb">
-                            	<a href="shop-cart.html">
-                                	<img src="images/product/product-img3.png" alt="" title="">
-                                </a>
+                                	<%= image_tag(@result_9) %><br>
+                                
                             </div>
                                <div class="product-details">
                             	<h4>
-                                	<a href="#"> Excepteur sint occaecat cupidatat </a>
+                                	<a href="#"> 오렌지 </a>
                                 </h4>
-                                <div class="dt-sc-price"> £ 200 </div>
+                                <div class="dt-sc-price"> 100g = 40kcal </div>
                                 <div class="hr-invisible-very-very-small"></div>
                             </div>
                         </div>
@@ -286,9 +285,13 @@
                     <div class="hr-invisible-small"></div>
                     <div class="pagination">
                         <ul>
-                            <input type="button" value="더보기" onClick="location.href='home.html'">
-
-
+                        <li class="current_now"><a href="#">1</a></li>
+                            <li><a href="shop_2.html">2</a></li>
+                            <li><a href="shop_3.html">3</a></li>
+                            <li><a href="shop_4.html">4</a></li>
+                            <li><a href="shop_5.html">5</a></li>
+                            <li><a href="shop_6.html">6</a></li>
+                            <li><a href="shop_7.html">7</a></li>
                         </ul>
                         <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
                     </div>

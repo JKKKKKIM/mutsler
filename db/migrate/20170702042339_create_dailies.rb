@@ -6,6 +6,8 @@ class CreateDailies < ActiveRecord::Migration
       t.string :content
       t.string :image
 
+      t.integer :user_id
+      t.integer :health_id
       t.timestamps null: false
     end
   end

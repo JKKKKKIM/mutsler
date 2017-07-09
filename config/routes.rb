@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   
   #수민 start
   get 'musle_video/list'
+  get 'musle_video/detail/:id' => 'musle_video#detail'
   #수민 end
   
   
@@ -23,12 +24,31 @@ Rails.application.routes.draw do
   
   #태영 start
   
+
+  get 'user_page' => 'musle_common#user_page'
+  get '/list' => "home#list"
   get 'user_page' => 'muscle_common#user_page'
-  
-  
+
   #태영 end
-  
-  
+  #지원 
+  get '/musle_food/shop'
+  get 'musle_food/food_inf'
+  get 'musle_food/vegetable'
+  get 'musle_food/fruit'
+  get 'musle_food/supplement'
+  get 'musle_food/max'
+  get 'musle_food/way'
+  get 'musle_food/shop_2'
+  get 'musle_food/shop_3'
+  get 'musle_food/shop_4'
+  get 'musle_food/shop_5'
+  get 'musle_food/shop_6'
+  get 'musle_food/shop_7'
+  get 'musle_food/food_inf_2'
+  get 'musle_food/vegetable_2'
+  get 'musle_food/fruit_2'
+
+  # 지원--end--
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

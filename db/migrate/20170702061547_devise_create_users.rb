@@ -5,6 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
      
       ##User _Custeom _  수민(db:migrate할 때 오류가 나서 주석했어요)
       #user의 닉네임을 담음
+
       t.string :nickname,              null: false, default: ""
       
       #t.string  :profile_image,
@@ -12,6 +13,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :weight, default: "", null: false
       t.string :height, default: "", null: false
       #t.boolean :gender, #true:man false:women
+
 
       
       ## Database authenticatable

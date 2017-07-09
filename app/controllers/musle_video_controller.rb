@@ -6,9 +6,16 @@ class MusleVideoController < ApplicationController
     def test 
     end
     def list
+        
+        @post = Video.all
 
     end
     def detail
+    
+        @post = Video.find(params[:id])
+        
+        @p = "test"
+        
     end
     def update
     end

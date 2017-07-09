@@ -8,6 +8,9 @@ gem 'carrierwave', '~> 1.0'
 #github: 'carrierwaveuploader/carrierwave'
 
 
+# css 깨지는거 방지하는 gem
+gem "font-awesome-rails"
+
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'
 gem 'paperclip',"~> 5.0.0"
@@ -25,6 +28,8 @@ gem 'simple_form'
 # 개발 모드에서 이메일을 보내않고 브라우저에서 미리보기한는 젬
 gem 'letter_opener', group: :development
 
+# 크롤링
+gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

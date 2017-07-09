@@ -79,6 +79,8 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    font-awesome-rails (4.7.0.2)
+      railties (>= 3.2, < 5.2)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.5.5)
@@ -246,12 +248,14 @@ DEPENDENCIES
   carrierwave (~> 1.0)
   coffee-rails (~> 4.1.0)
   devise
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
   letter_opener
   omniauth
   paperclip (~> 5.0.0)
+  nokogiri
   rails (= 4.2.5)
   rails_db
   rest-client
