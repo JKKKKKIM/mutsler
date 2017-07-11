@@ -58,9 +58,15 @@
                         </div>
                         <div class="entry-details">
                         	
-                        	<iframe width="560" height="315" src="https://www.youtube.com/embed/kfEC3oB91KQ" frameborder="0" allowfullscreen></iframe>
+                        	<iframe width="560" height="315" src="https://www.youtube.com/embed/<%=@url%>" frameborder="0" allowfullscreen></iframe>
+                        	<br><br><br>
                             <div class="entry-title">
                                 <h3> <%= @post.title %></h3>
+                            </div>
+                            <div class="section-text mb-30">
+                                <i class="<%=@like_user%>" value="<%=@post.id%>"></i>
+                                <p id="like_p"class="like_p" value="<%=@post.id%>"><%=@like%></p>
+                                <input type="hidden" id="post_like" value="<%=@post.id%>"  class="heart">
                             </div>
                             <div class="section-text mb-30">
                                 
@@ -74,33 +80,36 @@
                             <div class="clear"></div>
                             <div class="hr-invisible-medium"></div>
                             <div class="commententries">
-                            	<h3 class="border-title"> 3 <span>Comments</span></h3>
+                            	<h3 class="border-title"> <%=  %><span>Comments</span></h3>
                                 <ul class="commentlist">
+                                    <% @post.VideoReply.each do |p| %>
+                                        
+                                    <% u = User.find(p.user_id) %>
                                 	<li>
                                         <div class="comment">
                                             <header class="comment-author">
-                                                <%= image_tag("cmt-img1.jpg") %>
+                                                <%= image_tag(u.profile_image) %>
                                             </header>
                                             <div class="comment-details">
                                                 <div class="author-name">
-                                                    <a href="" title=""> nickname</a>
+                                                    <a href="" title=""> <%= u.email %></a>
                                                 </div>
-                                                <div class="commentmetadata">  June 25th, 2015, at 12:30 pm </div>
-                                                <div class="reply">
-                                                </div>
+                                                <div class="commentmetadata"> <%= p.updated_at.to_s[0..10]  %></div>
+                                         
                                                 <div class="comment-body">
                                                     <div class="comment-content">
-                                                    <p> comment</p>
+                                                    <p><%=p.content %></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                   	</li>
+                                  	<% end  %>
                                 </ul>
                             </div>
                             <div id="respond">
                             	<h3 class="border-title"> Post A <span>Comments</span></h3>
-                                <form method="post" action="php/send.php" name="enqform" id="comment-form" novalidate>
+                                <form method="get" action="/musle_video/reply" >
                                 	<div class="animate" data-delay="100" data-animation="fadeIn">
                                         <div class="column dt-sc-one-third first">
                                             <p>
@@ -112,8 +121,10 @@
                                     <div class="animate" data-delay="700" data-animation="fadeIn">
                                     	<div class="column dt-sc-one-column">
                                             <p>
-                                                <textarea cols="5" rows="10" required name="txtmessage" class="message" placeholder="Your Message"></textarea>
+                                                <textarea cols="5" rows="10" required name="msg" class="message" name = "msg" placeholder="Your Message"></textarea>
                                             </p>
+                                            <input type="hidden" name="user" value="<%=current_user.id%>">
+                                            <input type="hidden" name="video_id" value="<%=@post.id%>">
                                             <input type="submit" name="submit" value="Add Comments">
                                         </div>
                                     </div>

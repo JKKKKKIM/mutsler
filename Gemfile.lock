@@ -204,6 +204,8 @@ GEM
     simple_form (3.5.0)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
+    socialization (1.2.0)
+      activerecord
     spring (2.0.1)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -253,9 +255,9 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   letter_opener
+  nokogiri
   omniauth
   paperclip (~> 5.0.0)
-  nokogiri
   rails (= 4.2.5)
   rails_db
   rest-client
@@ -263,6 +265,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
+  socialization
   spring
   sqlite3
   turbolinks

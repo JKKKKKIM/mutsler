@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   #수민 start
   get 'musle_video/list'
   get 'musle_video/detail/:id' => 'musle_video#detail'
+  get 'musle_video/reply' => 'musle_video#reply_ok'
+  post 'video/like' => 'musle_video#like'
   #수민 end
   
   
