@@ -8,11 +8,12 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       t.string :nickname,              null: false, default: ""
       
-      #t.string  :profile_image,
       
+      t.string :avatar
       t.string :weight, default: "", null: false
       t.string :height, default: "", null: false
-      #t.boolean :gender, #true:man false:women
+      t.boolean :is_female, default: false
+      t.datetime :date_of_birth
 
 
       

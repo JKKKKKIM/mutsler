@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   
   
   #수민 start
-  get 'musle_video/list'
+  get 'musle_video/list' => 'musle_video#list'
   get 'musle_video/detail/:id' => 'musle_video#detail'
   #수민 end
   
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   #태영 start
   
 
-  get 'user_page' => 'musle_common#user_page'
+  
   get '/list' => "home#list"
   get 'user_page' => 'muscle_common#user_page'
 

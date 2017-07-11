@@ -3,7 +3,8 @@ gem 'jquery-turbolinks'
 gem 'omniauth'
 
 #이미지 업로드를 위한젬
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
+gem 'mini_magick'
 
 #github: 'carrierwaveuploader/carrierwave'
 

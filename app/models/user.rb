@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   
+  
+  
   rolify
   include Authority::UserAbilities
   # Include default devise modules. Others available are:
@@ -16,18 +18,6 @@ class User < ActiveRecord::Base
   
   def set_default_role
     add_role :user
-  end
-  
-  def name
-  end
-  
-  def provider
-  end
-  
-  def uid
-  end
-  
-  def image
   end
   
   def self.find_for_facebook_oauth(auth)
@@ -56,6 +46,7 @@ class User < ActiveRecord::Base
   has_many :dailies
   has_many :videos
   has_many :video_likes
+  mount_uploader :avatar, AvatarUploader
   
     
   #has_many :posts, dependent: :destroy

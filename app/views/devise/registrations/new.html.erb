@@ -27,6 +27,15 @@
     <%= f.text_field :nickname %>
   </div>
   
+  <!-- file 태그 추가 --> 
+  <div class="field">
+     <%= f.label :"프로필 사진" %><br />
+     <%= f.file_field :avatar %> 
+  </div>
+
+
+
+
   <div class="field">
     <%= f.label "키" %><br />
     <%= f.number_field :height %>
@@ -37,7 +46,13 @@
     <%= f.number_field :weight %>
   </div>
   
+  <div><%= f.check_box :is_female, {}, true %> <%= f.label :is_female, "여성" %> </div> <br />
+    <div><%= f.check_box :is_female, {}, false %> <%= f.label :is_female, "남성" %> </div> <br />
 
+  <div>
+    <%= f.label " 생년월일" %><br />
+    <%= f.date_select :date_of_birth %></div>
+        
   <div class="actions">
     <%= f.submit "회원가입 하기" %>
   </div>
