@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170702153046) do
-=======
 ActiveRecord::Schema.define(version: 20170711085112) do
->>>>>>> a22602ad060c91c0a4ce6b6402ad1defa1f3c269
 
   create_table "dailies", force: :cascade do |t|
     t.string   "title"
@@ -27,8 +23,6 @@ ActiveRecord::Schema.define(version: 20170711085112) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
-=======
   create_table "follows", force: :cascade do |t|
     t.string   "follower_type"
     t.integer  "follower_id"
@@ -40,7 +34,6 @@ ActiveRecord::Schema.define(version: 20170711085112) do
   add_index "follows", ["followable_id", "followable_type"], name: "fk_followables"
   add_index "follows", ["follower_id", "follower_type"], name: "fk_follows"
 
->>>>>>> a22602ad060c91c0a4ce6b6402ad1defa1f3c269
   create_table "foods", force: :cascade do |t|
     t.string   "category1"
     t.string   "category2"

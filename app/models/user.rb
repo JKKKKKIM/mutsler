@@ -1,11 +1,8 @@
 class User < ActiveRecord::Base
   
-<<<<<<< HEAD
-  
-  
-=======
   acts_as_follower     
->>>>>>> a22602ad060c91c0a4ce6b6402ad1defa1f3c269
+  
+  
   rolify
   include Authority::UserAbilities
   # Include default devise modules. Others available are:
