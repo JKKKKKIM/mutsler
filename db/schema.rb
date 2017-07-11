@@ -87,10 +87,14 @@ ActiveRecord::Schema.define(version: 20170711085112) do
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname",               default: "", null: false
+
+    t.string   "weight",                 default: "", null: false
+    t.string   "height",                 default: "", null: false
+
     t.string   "profile_image"
-    t.integer  "weight"
-    t.integer  "height"
+
     t.boolean  "gender"
+
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
