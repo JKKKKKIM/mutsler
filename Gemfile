@@ -11,7 +11,8 @@ gem 'mini_magick'
 
 # css 깨지는거 방지하는 gem
 gem "font-awesome-rails"
-
+# 좋아요 기능 
+gem "socialization"
 # 회원인증 및 권한설정을 위한 젬
 gem 'devise'
 gem 'paperclip',"~> 5.0.0"

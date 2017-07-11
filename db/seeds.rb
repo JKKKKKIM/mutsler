@@ -18,6 +18,12 @@ admin_user.add_role :admin
 #after_create :set_default_role, if: Proc.new { User.count > 1 }
 
 #vedio seed
+csv_text = File.read('vedios.csv')
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+  Video.create!(row.to_hash)
+end
+
 #csv_text = File.read('vedios.csv')
 #csv = CSV.parse(csv_text, :headers => true)
 #csv.each do |row|

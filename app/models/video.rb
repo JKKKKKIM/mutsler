@@ -1,3 +1,5 @@
 class Video < ActiveRecord::Base
-    belongs_to :user
+    acts_as_followable
+    has_many :user, through: :like_posts
+    has_many :VideoReply
 end

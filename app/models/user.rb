@@ -1,7 +1,11 @@
 class User < ActiveRecord::Base
   
+<<<<<<< HEAD
   
   
+=======
+  acts_as_follower     
+>>>>>>> a22602ad060c91c0a4ce6b6402ad1defa1f3c269
   rolify
   include Authority::UserAbilities
   # Include default devise modules. Others available are:
@@ -9,8 +13,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-  
-         
+   
          
   after_create :set_default_role, if: Proc.new { User.count > 1 }
 
@@ -44,7 +47,7 @@ class User < ActiveRecord::Base
 
   
   has_many :dailies
-  has_many :videos
+  has_many :videos , through: :like_posts
   has_many :video_likes
   mount_uploader :avatar, AvatarUploader
   
