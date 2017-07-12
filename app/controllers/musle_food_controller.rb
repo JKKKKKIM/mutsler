@@ -144,14 +144,16 @@ def fruit
         result = Nokogiri::HTML(open(uri_5))
     @result_5= result.css("div.item img")[3]['src']
     
-    #라임
-    @result_6= result.css("div.item img")[13]['src']
     
     #석류
     @result_7= result.css("div.item img")[7]['src']
     
     #산딸기
     @result_8= result.css("div.item img")[0]['src']
+    #라임
+    uri_7="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EB%9D%BC%EC%9E%84&order=popular"
+        result= Nokogiri::HTML(open(uri_7))
+        @result_6=result.css("div.item img")[5]['src']
     
     #매실
      uri_6="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EB%A7%A4%EC%8B%A4&order=popular"
@@ -328,7 +330,7 @@ def vegetable_2
     #가지
      uri="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=aubergine&order=popular"
         result = Nokogiri::HTML(open(uri))
-    @result= result.css("div.item img")[14]['src']
+    @result= result.css("div.item img")[15]['src']
     
     #양배추
     uri_9="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EC%96%91%EB%B0%B0%EC%B6%94&order=popular"
@@ -353,7 +355,7 @@ def vegetable_2
     #상추
     uri_5="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EC%83%81%EC%B6%94&order=popular"
         result = Nokogiri::HTML(open(uri_5))
-    @result_6= result.css("div.item img")[13]['src']
+    @result_6= result.css("div.item img")[6]['src']
     #깻잎
         uri_6="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EA%B9%BB%EC%9E%8E&order=popular"
         result = Nokogiri::HTML(open(uri_6))
@@ -483,7 +485,7 @@ def shop_6
     #상추
     uri_5="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EC%83%81%EC%B6%94&order=popular"
         result = Nokogiri::HTML(open(uri_5))
-    @result_6= result.css("div.item img")[13]['src']
+    @result_6= result.css("div.item img")[6]['src']
     #깻잎
         uri_6="https://pixabay.com/ko/photos/?hp=&image_type=&cat=&min_width=&min_height=&q=%EA%B9%BB%EC%9E%8E&order=popular"
         result = Nokogiri::HTML(open(uri_6))
