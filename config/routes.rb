@@ -16,6 +16,10 @@ Rails.application.routes.draw do
   get 'musle_video/detail/:id' => 'musle_video#detail'
   get 'musle_video/reply' => 'musle_video#reply_ok'
   post 'video/like' => 'musle_video#like'
+  get 'musle_video/musle'
+  get 'musle_video/body'
+  get 'musle_video/wannabe'
+  get 'musle_video/all'
   #수민 end
   
   

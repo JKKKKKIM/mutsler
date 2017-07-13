@@ -8,7 +8,7 @@ class MusleVideoController < ApplicationController
     end
     def list
         
-        @post = Video.all
+
 
     end
     def detail
@@ -87,4 +87,26 @@ class MusleVideoController < ApplicationController
          end
          return like_user
     end
+    
+    def musle
+        
+        @post = Video.where("category1=?","musle")
+        render :list
+    end
+    
+    def body
+        @post = Video.where("category1=?","body")
+        render :list
+    end
+    
+    def wannabe
+         @post = Video.where("category1=?","wannabe")
+        render :list
+    end
+    
+    def all
+        @post = Video.all
+        render :list
+    end
+    
 end
