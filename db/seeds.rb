@@ -21,7 +21,16 @@ admin_user.add_role :admin
 csv_text = File.read('vedios.csv')
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
-  Video.create!(row.to_hash)
+Video.create!(row.to_hash)
+end
+
+
+#food seed
+
+csv_text = File.read('food.csv')
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+Food.create!(row.to_hash)
 end
 
 #csv_text = File.read('vedios.csv')

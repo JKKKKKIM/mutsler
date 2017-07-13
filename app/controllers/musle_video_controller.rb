@@ -1,6 +1,5 @@
 require('nokogiri')
 require('open-uri')
-require('rest-client')
 
 class MusleVideoController < ApplicationController
     before_action :authenticate_user!
@@ -12,19 +11,8 @@ class MusleVideoController < ApplicationController
 
     end
     def detail
-         puts "detail"
-         puts current_user.id
-            
+    
         @post = Video.find(params[:id])
-        @url = @post.url.to_s[@post.url.index(?=)+1..-1]
-        
-        @like = VideoLike.where("video_id = ?", params[:id]).length
-        
-   
-        @like_user = like_check(current_user.id,params[:id])
-        
-        puts @like 
-        puts "뭐라고나와?"
         
     end
     def update
